@@ -3,10 +3,13 @@
 
 
 # Introduction
+"The Farmer Was Replaced" is the python base programming where the game we can control a farming drone, telling it to plant and harvest crops(carrot,pumpkin,sunflower,hay,tree,bush), add water and fertilizer and so more.
+Our task is to develop a farm using the programming language to do activities like planting, watering, growing, harvesting different crops using and acquiring knowledge of using the loops and conditional statements making it entertaining.  
 
 # Table of Contents
-
-# Code-Snippets-and-Explanation
+-[Code-Snippets-and-Explanation](#code-snippets-and-explanation)
+-[Challenges and Learning](#Challenges-and-Learning)
+-[References](#References)
 
 ## Step 1: Farming on 1 tile
 
@@ -288,121 +291,45 @@ I learned to make the farm to till, and plant the seed of pumpkin and water it a
 2.[Resource 2](https://youtu.be/gmJ357XAAdE?si=0bhCOu9eJkKWlv5y)
 
 
-## Step 4: Farming on 5*5
+## Step 5: Farming on 5*5
 
 **Code:**
 ```python
 while True:
     for x in range(get_world_size()):
-       for y in range(get_world_size()):
-            if get_world_type() = Ground.Soil:
-                till()
-            if can_harvest():
-                harvest()
-            move(South)
         move(East)
-harvest_grid()   
-```
-
-```python
-while True:
-    get_water()
-    trade(Items.Empty_Tank)
-    use_Items(Items.Water_Tank)
-    move(North)
-    get_water()
-    trade(Items.Empty_Tank)
-    use_Items(Items.Water_Tank)
-    move(East)
-    get_water()
-    trade(Items.Empty_Tank)
-    use_Items(Items.Water_Tank)
-    move(North)
-    get_water()
-    trade(Items.Empty_Tank)
-    use_Items(Items.Water_Tank)
-    move(West)
-    get_water()
-    trade(Items.Empty_Tank)
-    use_Items(Items.Water_Tank)
-    move(West)
-    if can_harvest():
-        harvest()
-```
-
-```python
-while True:
-    for x in range(get_world_size()):
-        move(East)
-        trade(Items.Pumpkin_Seed())
         for y in range(get_world_size()):
-            if num_items(Items.Wood) < 1000:
-                if can_harvest():
-                    harvest()
-            plant(Entities.Pumpkin)
-            move(South)    
-```
-
-```python
-while True:
-    for x in range(get_world_size()):
-        move(East)
-        trade(Items.Pumpkin_Seed())
-        for y in range(get_world_size()):
-            if num_items(Items.Pumpkin) < 1000:
+            if num_items(Items.Power):
                 if can_harvest():
                     harvest() 
                  till()
-                 plant(Entities.Pumpkin)
-                 move(South) 
+            plant(Entities.Sunflower)
+            move(South)
+  
 ```
-
-```python
-while True:
-    for x in range(get_world_size()):
-       for y in range(get_world_size()):
-            if % 2 == 0:
-                if y % 2 == 0:
-                    plant(Entities.Treee)
-                move(South)
-            elif x % 2 == 1:
-                if y % 2 == 1:
-                    plant(Entites.Tree)
-                move(South)
-        move(East)
-plant_trees() 
-```
-
-
 
 **Explanation:**
-First Code: Using the loop function representing x and y coordinates,if the ground type is Soil, it calls till() to prepare it for planting,if it can be harvested at the current position, it harvest then moves South after each y loop iteration and East after each x loop. The harvest_grid() at the end indicates to clean up any remaining resources.
-
-Second Code:The loop continuously gathers water, trades empty tanks for full tanks, and uses these water tanks moving it in North, East, North, West, and West and if there's something to harvest, it harvests it.
-
-Third Code: The loop goes through all the grid.For each x, the entity moves East and trades for pumpkin seeds and for each y, it harvests if there are less than 1000 wood items in inventory and plants a pumpkin at each cell and moves South.
-
-Fourth Code: This is simlar to the but add till so the pumpkin can be planted and manages the pumpkin resources, only harvesting when less than 1000 pumpkins.
-
-Fifth Code:  The loop goes through all the grid. The tree plants based on x and y coordinates.
+This code is to plant sunflower's seed and harvest sunflower by using the loop function like in pumpkin and carrot.The if num_items(Items.Power) statement checks if the player has any "Power" items in their inventory. If they do, it harvest and it tills the soil, preparing the ground for planting and the code moves south by one step in the grid.
 
 **Demo:**
 Video Demo:
-![](IMG_2982.mp4)
+![](IMG_2989.mp4)
 
 
 **Notes**
-- Using the code above I was able to get enough plant tree, pumpkin seed & pumpkin, water the plant, make farm to till(soil) to unlock others.
-- These features were unlocked too: sunflower,polyculture, dictionaries and expaneded to 5*5.
+- Using the code above I was able to harvest sunflower so that it get power and speed up to unlock others.
+- These features were unlocked too: treasure, maze, polyculture,dictionaries and other more.
 
 # Challeges and Learning
  
 ## Challenges 
-The challenges I faced were to code for the plant tree, pumpkin seed & pumpkin, water the plant,make farm to till,and grow the tree on all the till.
+The challenges I faced were harvest sunflower in the farm with the question how to program and and the conditions where misplaced which leading to not functioning.
 
 ## Learnings
-I learned to make the farm to till, and plant the seed of pumpkin and water it and grow it and harvest it with using loop functions, if,elif statement.
+I learned the sequence of harvest → till → plant implies an automated farming cycle: clearing any mature crop, preparing the soil, and replanting.
 
 ## References
 1.[Resource 1](https://youtu.be/-hdhyKf2aN8?si=rxODvUsQhHm55cb-)
 2.[Resource 2](https://youtu.be/gmJ357XAAdE?si=0bhCOu9eJkKWlv5y)
+
+## Step 1: Farming on 1 tile
