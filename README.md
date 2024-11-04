@@ -331,3 +331,6 @@ I learned the sequence of harvest → till → plant implies an automated farmin
 ## References
 1.[Resource 1](https://youtu.be/-hdhyKf2aN8?si=rxODvUsQhHm55cb-)
 2.[Resource 2](https://youtu.be/gmJ357XAAdE?si=0bhCOu9eJkKWlv5y)
+
+# Google  drive Link
+https://drive.google.com/drive/folders/1KphCFwFankuD-npzecqjNW0vR2FZKQHG?usp=sharing
